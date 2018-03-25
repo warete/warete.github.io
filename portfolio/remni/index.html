@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REMNIRUS</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="js/timer.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/realtime.js"></script>
+        <script type="text/javascript" scr="js/openclosecomment.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <style type="text/css">
+            .box .action a {display: none;}
+            .txt {overflow: hidden;}
+            .close .txt {height: 135px;}
+            .open .txt {height: auto;}
+            .close .action .open,
+            .open .action .close {display: inline;}
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function (){
+            $('.action .open').click(function (){
+            $(this).parents('.box').removeClass('close').addClass('open');});
+            $('.action .close').click(function (){
+            $(this).parents('.box').removeClass('open').addClass('close');});});
+        </script>
+    </head>
+    <body>
+<body onload="time()">
+      <div id="wrapper">
+          <header id="header">
+              <div class="container" clearfix>
+                  <div class="logo">
+                      <a href="./index.html"><img src="img/logo.png" width="176" height="35">
+                      </a>
+                  </div>
+                  <nav id="menu">
+                      <ul class="nav">
+                          <li><a href="#plus">Наши преимущества</a></li>
+                          <li><a href="#about">О нас</a></li>
+                          <li><a href="#plus">Сертификаты</a></li>
+                          <li><a href="#feadback">Отзывы</a></li>
+                          <li><a href="#contacts">Контакты</a></li>
+                      </ul>
+                  </nav>
+              </div>          
+          </header>
+          <div id="home">
+              <div class="containerakcia">
+                  <div class="containerakcia1">
+                      <h5 >АКЦИЯ</h5>
+                  </div>
+                  <div class="containerakcia2">
+                      <h1 class="zagolovok">Заголовок акции</h1>
+                  </div>
+                  <div class="containerakcia3">
+                      <h1 class="zagolovok">в две строки</h1>
+                  </div>
+                  <div class="containerakcia4">
+                      <h6 class="texth6">Описание акции. Электромеханическая система представляет собой успокоитель качки. Вращение, обобщая, изложенное, позволяет пренебречь колебаниями корпуса</h6>
+                  </div>
+                  <div class="timer">
+                      <h4 class="texth4">До конца акции осталось:</h4>
+                      <div class="timeronline">
+                          <div class="timerdays">
+                              <div class="timerday">
+                                  <span id="today"></span>
+                              </div>
+                          </div>
+                          <div class="timerhours">
+                              <div class="timerhour">
+                                  <span id="thour"></span>
+                              </div>
+                          </div>
+                          <div class="timerminutes">
+                              <div class="timerminute">
+                                  <span id="tmin"></span>
+                              </div>
+                          </div>
+                          <div class="timerseconds">
+                              <div class="timersecond">
+                                  <span id="tsec"></span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="timerscore">
+                          <h6 class="timerscoreday">Дней</h6>
+                          <h6 class="timerscorehour">Часов</h6>
+                          <h6 class="timerscoremin">Минут</h6>
+                          <h6 class="timerscoresec">Секунд</h6>
+                      </div>
+                  </div>
+                  <div class="btn1">
+                      <a href="#" alt="" class="btn1t">Учавствовать</a>
+                  </div>
+              </div>
+              <img class="imgclass" src="img/akcia.jpg">
+          </div>  
+          <div id="plus">
+              <div class="container2">
+                  <div class="container">
+                      <div class="menu1">
+                          <div class="nadp">
+                              <a class="nadp_a">Наши Преимущества</a>
+                          </div>
+                          <div class="line">
+                              <img src="img/plus1.jpg">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="plus2">
+                      <div class="lowprice">
+                          <div class="blockinfo1">
+                              <img src="img/blockinfo1.jpg" class="biimg">
+                              <div class="bi1">    
+                                  <h3 class="plus2h3">Низкая цена</h3>
+                                  <h4 class="plus2h4">Лучшее предложение</h4>
+                              </div>
+                              <h6 class="plus2h6">Электромеханическая система представляет собой успокоитель качки. Вращение, обобщая изложенное, позволяет пренебречь колебаниями корпуса, хотя этого 
+в любом случае требует экваториальный момент</h6>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="double1">
+                      <div class="plus3">
+                          <div class="otgruzka">
+                              <div class="blockinfo2">
+                                  <img src="img/blockinfo2.jpg" class="biimg">
+                                  <div class="bi1">    
+                                  <h3 class="plus2h3">Отгрузка</h3>
+                                  <h4 class="plus2h4">Со склада</h4>
+                              </div>
+                              <h6 class="plus2h6">Вращение, обобщая позволяет пренебречь колебаниями корпуса хотя</h6>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="plus4">
+                          <div class="shipping">
+                              <div class="blockinfo3">
+                                  <img src="img/blockinfo3.jpg" class="biimg">
+                                  <div class="bi1">    
+                                  <h3 class="plus2h3">Доставка</h3>
+                                  <h4 class="plus2h4">По всей России</h4>
+                              </div>
+                              <h6 class="plus2h6">Случае требует экваториальный момент, составляя уравнения</h6>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="plus5">
+                      <div class="level">
+                          <div class="blockinfo4">
+                              <img src="img/blockinfo4.jpg" class="biimg">
+                              <div class="bi1">    
+                                  <h3 class="plus2h3">Качество</h3>
+                                  <h4 class="plus2h4_2">Сертификаты качества</h4>
+                              </div>
+                              <h6 class="plus2h6">Эйлера для этой системы координат. Механическая система, в первом приближении, зависима.
+Классическое уравнение движения эллиптично представляет собой штопор</h6>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="plus6">
+                      <div class="made">
+                          <div class="blockinfo5">
+                              <img src="img/blockinfo5.jpg" class="biimg">
+                              <div class="bi1">    
+                                  <h3 class="plus2h3_2">Собственное производство</h3>
+                                  <h4 class="plus2h4">Импортозамещение</h4>
+                              </div>
+                              <h6 class="plus2h6">Время набора максимальной скорости, в первом приближении, преобразует колебательный волчок. Направление устойчиво представляет собой ускоряющийся момент, при котором центр масс стабилизируемого тела занимает верхнее положение. </h6>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="about">
+              <div class="container2">
+                  <div class="container">
+                      <div class="menu2">
+                          <div class="nadp">
+                              <a class="nadp_a">О нас</a>
+                          </div>
+                          <div class="line">
+                              <img src="img/plus1.jpg">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="content_menu2">
+                  <div class="leftcm2">
+                  </div>
+                  <div class="rightdp">
+                     <a>Классическое уравнение движения эллиптично представляет собой штопор. Угол крена перманентно характеризует нестационарный волчок. Совершенно аналогично, маховик представляет собой нестационарный курс, что обусловлено малыми углами карданового подвеса. Собственный кинетический момент принципиально не входит своими составляющими, что очевидно, в силы нормальных реакций связей, так же как и гироскопический маятник.
+<p></p>
+<p>Крен эллиптично учитывает устойчивый момент силы трения. Направление поступательно переворачивает лазерный подвижный объект, механически интерпретируя полученные выражения. Необходимым и достаточным условием отрицательности действительных частей корней рассматриваемого характеристического уравнения является </a>
+                  </div>
+              </div>
+          </div>
+          <div id="feadback">
+              <div class="container2">
+                  <div class="container">
+                      <div class="menu4">
+                          <div class="nadp">
+                              <a class="nadp_a">Отзывы наших клиентов</a>
+                          </div>
+                          <div class="line">
+                              <img src="img/plus1.jpg">
+                          </div>
+                      </div>
+                      <div class="users">
+                          <div class="u1">
+                             <img src="img/u1.jpg">
+                             <div class="uinfo">
+                                <h4 class="usfbh4">Сергей Викторович</h4>
+                                <h5 class="usfbh5">Менеджер</h5>
+                                <div class="box close">
+                                    <div class="txt">
+                                        <h6 class="usfbh6">Направление устойчиво представляет собой ускоряющийся момент, при котором центр масс стабилизируемого телаНаправление устойчиво представляет собой ускоряющийся момент, при котором центр масс стабилизируемого тела</h6>
+                                    </div>
+                                    <div class="lineus"></div>
+                                    <div class="action">
+                                        <a class="close" alt="">
+                                            Свернуть
+                                            <img class="clickclose" src="img/clickclose.png">
+                                        </a>
+                                        <a class="open" alt="">
+                                            Подробнее
+                                            <img class="clickopen" src="img/click.png">
+                                        </a>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="u2">
+                             <img src="img/u2.jpg">
+                             <div class="uinfo">
+                                <h4 class="usfbh4">Анна Николаевна</h4>
+                                <h5 class="usfbh5">Продавец</h5>
+                                <div class="box close">
+                                    <div class="txt">
+                                        <h6 class="usfbh6">Электромеханическая система представляет собой успокоитель качки. Вращение,                          обобщая изложенное Направление устойчиво представляет собой ускоряющийся момент, при котором центр масс стабилизируемого тела занимает верхнее положение.</h6>
+                                    </div>
+                                    <div class="lineus"></div>
+                                    <div class="action">
+                                        <a class="close" alt="">
+                                            Свернуть
+                                            <img class="clickclose" src="img/clickclose.png">
+                                        </a>
+                                        <a class="open" alt="">
+                                            Подробнее
+                                            <img class="clickopen" src="img/click.png">
+                                        </a>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="u3">
+                             <img src="img/u1.jpg">
+                             <div class="uinfo">
+                                <h4 class="usfbh4">Сергей Викторович</h4>
+                                <h5 class="usfbh5">Менеджер</h5>
+                                <div class="box close">
+                                    <div class="txt">
+                                        <h6 class="usfbh6">Направление устойчиво представляет собой ускоряющийся момент, при котором центр масс стабилизируемого телаНаправление устойчиво представляет собой ускоряющийся момент, при котором центр масс стабилизируемого тела</h6>
+                                    </div>
+                                    <div class="lineus"></div>
+                                    <div class="action">
+                                        <a class="close" alt="">
+                                            Свернуть
+                                            <img class="clickclose" src="img/clickclose.png">
+                                        </a>
+                                        <a class="open" alt="">
+                                            Подробнее
+                                            <img class="clickopen" src="img/click.png">
+                                        </a>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="u4">
+                             <img src="img/u2.jpg">
+                             <div class="uinfo">
+                                <h4 class="usfbh4">Анна Николаевна</h4>
+                                <h5 class="usfbh5">Продавец</h5>
+                                <div class="box close">
+                                    <div class="txt">
+                                        <h6 class="usfbh6">Электромеханическая система представляет собой успокоитель качки. Вращение,                          обобщая изложенное Направление устойчиво представляет собой ускоряющийся момент, при котором центр масс стабилизируемого тела занимает верхнее положение.</h6>
+                                    </div>
+                                    <div class="lineus"></div>
+                                    <div class="action">
+                                        <a class="close" alt="">
+                                            Свернуть
+                                            <img class="clickclose" src="img/clickclose.png">
+                                        </a>
+                                        <a class="open" alt="">
+                                            Подробнее
+                                            <img class="clickopen" src="img/click.png">
+                                        </a>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                  </div>
+              </div>
+              <div class="content_menu4">
+                  <div class="nadp2">
+                      <p class="nadp_aw">Заказать продукцию</p>
+                  </div>
+                  <div class="emailform">
+                      <div class="emailleftblock">
+                          <form action= "./index.html" method= "POST">
+                          <div class="u_name">
+                               <p>
+                                   <input type= "text" name= "name" placeholder="Ваше имя" class="inputlformn">
+                               </p>
+                              <img src="img/emailblock_name.png">
+                          </div>
+                          <div class="u_mail">
+                              <p>
+                                   <input type= "text" name= "email" placeholder="E-mail" class="inputlforme">
+                               </p>
+                              <img src="img/emailblock_email.png">
+                          </div>
+                          <div class="u_phonenumber">
+                              <p>
+                                   <input type= "text" name= "phone" placeholder="Телефон" class="inputlformp">
+                               </p>
+                              <img src="img/emailblock_phone.png">
+                          </div>
+                      </div>
+                      <div class="emailmsgblock">
+                          <p> 
+                              <img src="img/emailblock_msg.png" class="inputrformimg">
+                              <textarea rows= "6" cols= "95" name= "message" placeholder="Ваш комментарий" class="inputrform"></textarea>
+                           </p>
+                      </div>
+                  </div>
+                  <div class="btn2g">    
+                      <div class="btn2">
+                          <input type= "submit" value= "Оставить комментарий" class="btn2ginput">
+                      </div>
+                   </div>
+              </div>
+          </div>
+          <div id="contacts">
+              <div class="container2">
+                  <div class="container">
+                      <div class="menu5">
+                          <div class="nadp">
+                              <a class="nadp_a">Как нас найти</a>
+                          </div>
+                          <div class="line">
+                              <img src="img/plus1.jpg">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="content_menu5">
+                  <div class="googlemap">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=SRWtLOfUZMNIWZDTgSfMEjVjSG3enY4G&width=1190&height=380&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+                  </div>
+                  <div class="blockmap">
+                      <h3 class="blockmaph3">Город Энгельс, ул. Тельмана 26/2</h3>
+                      <div class="phone2">
+                          <img src="img/emailblock_phone2.png" class="emailblock_phone2">
+                          <h5 class="emailblock_phone2h5">8 (8452) 21-65-14   8 (937) 546-15-55</h5>
+                      </div>
+                      <div class="email2">
+                          <img src="img/emailblock_email.png" class="email2img">
+                          <h5 class="emailblock_phone2h5_2">support@capital.ru</h5>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="footer">
+              <div class="cprt">
+                  <a>© «Ремни для станков» 2016 </a>
+              </div>
+              
+              <div class="footerline">
+                  <img src="img/footerline.jpg">
+              </div>
+          </div>
+      </div>
+    </body>
+</html>

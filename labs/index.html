@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Лабораторная работа №1</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!--Комментарий-->
+        <style>                     
+            dt {
+                display: inline-block;
+                vertical-align: top;
+                width: 20px;
+            }
+            dd {
+                -webkit-margin-start: 5px;
+                margin-left: 5px;
+                display: inline-block;
+            }            
+            /*li {
+                list-style-type: square;
+            }*/
+            table {
+                border: 5px solid red;
+            }
+        </style>
+    </head>
+    <body>
+       <h1>HTML</h1>
+        <p><b>Язык HTML</b> <i>был разработан британским учёным Тимом Бернерсом-Ли приблизительно в 1986—1991 годах в стенах ЦЕРНа в Женеве в Швейцарии.</i> <u>HTML создавался как язык для обмена научной и технической документацией, пригодный для использования людьми, не являющимися специалистами в области вёрстки.</u> HTML успешно справлялся с проблемой сложности SGML путём определения небольшого набора структурных и семантических элементов — дескрипторов. Дескрипторы также часто называют «тегами». С помощью HTML можно легко создать относительно простой, но красиво оформленный документ. Помимо упрощения структуры документа, в HTML внесена поддержка гипертекста. Мультимедийные возможности были добавлены позже.</p>
+        Изначально язык HTML был задуман и создан как средство структурирования и форматирования документов без их привязки к средствам воспроизведения (отображения). В идеале, текст с разметкой HTML должен был без стилистических и структурных искажений воспроизводиться на оборудовании с различной технической оснащённостью (цветной экран современного компьютера, монохромный экран органайзера, ограниченный по размерам экран мобильного телефона или устройства и программы голосового воспроизведения текстов). Однако современное применение HTML очень далеко от его изначальной задачи. <br>Например, тег &lt;table&gt; предназначен для создания в документах таблиц, но часто используется и для оформления размещения элементов на странице. С течением времени основная идея платформонезависимости языка HTML была принесена в жертву современным потребностям в мультимедийном и графическом оформлении.
+        <hr>
+        <div class="browsers">
+           <h2>Браузеры</h2>
+            Текстовые документы, содержащие разметку на языке HTML (такие документы традиционно имеют расширение .html или .htm), обрабатываются специальными приложениями, которые отображают документ в его форматированном виде. Такие приложения, называемые «браузерами» или «интернет-обозревателями», обычно предоставляют пользователю удобный интерфейс для запроса веб-страниц, их просмотра (и вывода на иные внешние устройства) и, при необходимости, отправки введённых пользователем данных на сервер. Наиболее популярными на сегодняшний день браузерами являются Google Chrome, Mozilla Firefox, Opera, Internet Explorer и Safari.
+        </div>
+        <hr>
+        <h3>Перспективы</h3>
+        <span class="persp">В настоящее время Консорциум Всемирной паутины разработал HTML версии 5. Черновой вариант спецификации языка появился в Интернете 20 ноября 2007 года. <br>Сообществом WHATWG (англ. Web Hypertext Application Technology Working Group), начиная с 2004 года, разрабатывается спецификация Web Applications 1.0, часто неофициально называемая «HTML 5», которая расширяет HTML (впрочем, имея и совместимый с XHTML 1.0 XML-синтаксис) для лучшего представления семантики различных типичных страниц, например форумов, сайтов аукционов, поисковых систем, онлайн-магазинов и т. д., которые не очень удачно вписываются в модель XHTML 2.0.</span>
+        <hr>
+        H<sub>2</sub>O
+        <br>
+        y=a<sup>x</sup>
+        <br>
+        <pre>
+┌──────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
+│  α   │ 0° │ 10°│ 20°│ 30°│ 40°│ 50°│ 60°│ 70°│ 80°│ 90°│
+├──────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
+│sin(α)│ 0  │0.17│0.34│0.5 │0.64│0.76│0.86│0.93│0.98│ 1  │
+├──────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
+│cos(α)│ 1  │0.98│0.93│0.86│0.76│0.64│0.5 │0.34│0.17│ 0  │
+└──────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘         
+        </pre>
+        <tt>Таблица из лабораторной работы по информатике №1</tt>
+        <hr>
+        <img src="images/picture.jpg" width="200px" alt="Рисунок из лабораторной работы по информатике №1">
+        <hr>
+        <a href="second_page.html">Перейти на другую страницу</a>
+        <br>
+        <a href="mailto:mr-warete@mail.ru">mr-warete@mail.ru</a>
+        <hr>
+        <h4>Вариант 10</h4>
+		<div class="row">
+			<div class="fl" style="margin-right: 60mm;">
+				<ol start="3" type="A">
+					<li>Зима</li>
+					<li>Весна
+						<ul>
+							<li>Март</li>
+							<li>Апрель</li>
+							<li>Май</li>
+						</ul>
+					</li>
+					<li>Лето</li>
+					<li>Осень</li>
+				</ol>
+			</div>
+			<div class="fl" style="flex-basis: 550px;">
+				<table style="border: 1px solid grey;">
+					<tr>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+						<td></td>
+						<td></td>
+						<td rowspan="2"></td>
+						<td rowspan="2"></td>
+					 </tr>
+					 <tr>
+					  <td colspan="2"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td colspan="2"></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+						
+			
+			<div class="fl fl2">
+				<div class="fl3">
+                   <input style="width: 30%; float: right;" type="text" value="Новосибирск">
+                </div>			
+                <div class="fl3">
+                    <input type="radio" name="answer" value="a1">Омск<br>
+                    <input type="radio" name="answer" value="a2">Новосибирск<br>
+                    <input type="radio" name="answer" value="a3">Томск
+				</div>			
+				<div class="fl3">
+                   <div style="float: right;">
+                        <input type="checkbox" name="option2" value="a1">Омск<br>
+                        <input type="checkbox" name="option2" value="a2">Новосибирск<br>
+                        <input type="checkbox" name="option2" value="a3">Томск
+                    </div>
+                </div>
+			</div>
+			<div class="fl" style="flex-basis: 70%; display: flex; flex-direction: column; align-items: flex-end;">
+				<div class="main_circle">
+					<div class="center_circle"></div>
+					<div class="circle circle_1"></div>
+					<div class="circle circle_2"></div>
+					<div class="circle circle_3"></div>
+					<div class="circle circle_4"></div>
+					<div class="circle circle_5"></div>
+					<div class="circle circle_6"></div>
+					<div class="circle circle_7"></div>
+					<div class="circle circle_8"></div>
+				</div>
+			</div>
+			<div class="fl fish">
+			    <div style="background: #00d8ff; flex: 10 3; flex-basis: 80%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ipsa.</div>
+			    <div style="background: #00ff80; flex: 1 1; flex-basis: 20%;"></div>
+			    <div style="background: #e200ff; overflow-y: scroll; height: 60px; flex-basis: 70%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore incidunt sit quidem quod vel, perspiciatis, optio deserunt sequi accusamus quos delectus perferendis facere. Consectetur impedit fugit minima magni temporibus debitis!</div>
+			</div>
+			<div class="fl">
+				<p>
+					<input type="file" name="f">
+				</p>
+			    <p>
+					<input type="submit"><button>Сбросить</button>
+				</p>
+			</div>			
+			
+        </div>
+        
+        <!--
+        <div class="pict">
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>-->
+    </body>
+</html>

@@ -1,0 +1,124 @@
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+background-color: #e3ebef;
+  }
+.rslides .cont{
+  display:inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 20px 37px;
+    width: 500px; 
+  }
+.rslides h3{
+  font: 700 28px / 35px PTSans;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;    
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {    
+    height: 410px;
+    float: left;
+    width: 575px;
+    border: 0;
+    position: relative;   
+    display:inline-block;
+}
+
+.rslides_here{
+    background: #ffcc00 !important;
+}
+.rslides_here>a{    
+    color: #000 !important;    
+}
+.rslides_tabs{   
+    position: relative;    
+    height: 35px;
+    font-size: 18px;
+    z-index: 10;
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+.rslides_tabs > li{
+       border-radius: 0;
+    opacity: 1;
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    -webkit-opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=100)";
+    filter: alpha(opacity=100);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block;
+    background: #008cc6;
+    margin: 0px 5px;
+    border-radius: 10px;    
+}
+
+
+
+.rslides_tabs>li>a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: rgba(255, 255, 255, 1);
+    margin: 0px 0px;
+    position: relative;
+    top: -4px;
+    font-size: 14px;
+    font-family: PTSans;
+    font-weight: 700;
+    text-align: center;
+}
+
+.prev {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    z-index: 10;
+    background:url(../images/slider_content/prev.png) center no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.next {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    z-index: 10;
+    background:url(../images/slider_content/next.png) center no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.nav_and_tabs {
+    width: 400px;
+    position: relative;
+    margin: -60px 0 0 613px;
+}
+
+

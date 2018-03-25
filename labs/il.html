@@ -1,0 +1,124 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>HTML4</title> 
+        <style> 
+            ul.abc{ 
+            list-style-type: upper-alpha; 
+            } 
+            .tab_cont{ 
+            width: 600px; 
+            height: 300px; 
+            display: table; 
+            border: solid black 1px; 
+            position: relative; 
+            } 
+            .cell{ 
+            display: table-cell; 
+            border: solid black 1px; 
+            height: 100px; 
+            width: 100px; 
+            background: #fff; 
+            } 
+            .row{ 
+            display:table-row; 
+            } 
+
+            .sp{ 
+            position: absolute; 
+            border: solid black 2px; 
+            } 
+
+            .first_rowspan{ 
+            height: 304px; 
+            top: -1px; 
+            left: -1px; 
+            width: 98px; 
+            } 
+
+            .second_rowspan{ 
+            height: 304px; 
+            top: -1px; 
+            right: -1px; 
+            width: 98px; 
+            } 
+
+            .first_colspan{ 
+            width: 398px; 
+            top: 99px; 
+            left: 99px; 
+            height: 102px; 
+            } 
+            .circle{
+                border-radius: 50px;
+            }
+            .one {
+                width: 100px;
+                height: 100px;
+                background: red;
+                z-index: 2;
+            }  
+            .two {
+                width: 100px;
+                height: 100px;
+                background: green;
+                z-index: 1;
+                position: relative;
+                top: -40px;
+                left: 50px;
+            }
+        </style> 
+    </head> 
+    <body> 
+        <ul> 
+            <li>Зима</li> 
+            <li>Весна</li> 
+
+                <ol start="24" type="A"> 
+                    <li>Март</li> 
+                    <li>Апрель</li> 
+                    <li>Май</li> 
+                </ol> 
+            <li>Лето</li> 
+            <li>Осень</li> 
+        </ul> 
+
+
+
+
+        <div class="tab_cont"> 
+            <div class="row"> 
+                <div class="cell sp first_rowspan"></div> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+            </div> 
+            <div class="row"> 
+                <div class="cell sp first_colspan"></div> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+            </div> 
+            <div class="row"> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+                <div class="cell"></div> 
+                <div class="cell sp second_rowspan"></div> 
+            </div> 
+        </div>
+        
+        
+        <div style="position: relative;">
+            <div class="one circle"></div>
+            <div class="two circle"></div>
+        </div>
+
+    </body>
+</html>

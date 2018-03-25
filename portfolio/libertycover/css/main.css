@@ -1,0 +1,384 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+html.js .loader {
+	background: none repeat scroll 0 0 #ffffff;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+html.js .loader_inner {
+	background-image: url("../img/preloader.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	margin-left: -30px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	    font-family: 'Lato', sans-serif;
+	overflow-x: hidden;
+    transition: opacity 2s;
+    opacity: 0;
+}
+.hidden {
+	display: none;
+}
+
+.logo {
+    background: url('../img/logo.png') center no-repeat;
+    box-sizing: content-box;
+    background-size: contain;
+    width: 63px;
+    height: 21px;
+}
+
+body {
+    background: linear-gradient(to top, #d8dcdd, #fefefe);
+    /*height: 100vh;*/
+    min-width: 320px;
+}
+
+.main_cars_block {
+    position: relative;
+    max-width: 840px;
+    margin: 100px auto 0 auto;
+}
+
+.main_cars_block .car{
+    position: absolute;
+}
+
+.main_cars_block .car1{
+    width: 430px;
+    height: 229px;
+    background: url('../img/auto1.png') center no-repeat;
+    left: 0;
+    top: 0;
+}
+
+.main_cars_block .car2{
+    width: 341px;
+    height: 265px;
+    background: url('../img/auto2.png') center top no-repeat;
+    z-index: 2;
+    position: relative;
+    margin: 0 auto;
+}
+
+@-webkit-keyframes blink { 
+	0% { opacity:0; }
+	25% { opacity:0; }
+	50% { opacity:1; }
+    55% { opacity:0; }
+    60% { opacity:1; }    
+    75% { opacity:0,5; }
+	100% { opacity:0; }	
+}
+
+@keyframes blink {  
+	0% { opacity:0; }
+	25% { opacity:0; }
+	50% { opacity:1; }
+    55% { opacity:0; }
+    60% { opacity:1; }    
+    75% { opacity:0,5; }
+	100% { opacity:0; }	
+}
+
+.main_cars_block .car2:hover .lights{
+    opacity: 1;
+}
+
+.main_cars_block .car3{
+    width: 389px;
+    height: 200px;
+    background: url('../img/auto3.png') center no-repeat;
+    right: 0;
+    top: 0;
+}
+
+.lights {
+    position: absolute;
+    background: url('../img/fari.png') center top no-repeat;
+    width: 341px;
+    height: 265px;
+    transition: all 1s;
+    opacity: 0;
+    -webkit-animation: blink 3s linear infinite;
+    animation: blink 3s linear infinite;
+    -webkit-user-select: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.about_block {
+    background: #154358;
+/*    height: 500px;*/
+    background-size: contain;
+}
+
+.about_block img{
+    width: 100%; margin: 10px 0 50px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid rgba(128, 1, 1, 0.12);
+}
+
+.about_block h2, .about_block h3, .about_block p {
+    color: #fff;
+}
+
+.about_block h2, .about_block h3 {
+    text-shadow: 2px 2px 5px black;
+}
+
+.about_block h3 {
+    position: relative;
+    margin: 20px auto;
+}
+
+.about_block hr {    
+    border-top: 1px solid rgba(247, 247, 247, 0.28);
+}
+
+.serv-item {
+    display: inline-block;
+    width: 350px;
+/*    height: 150px;*/
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    transition: all 1s;
+    opacity: 0.8;
+    vertical-align: top;
+}
+.serv-item:hover {    
+    opacity: 1;
+}
+
+.center-block {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    position: relative;
+}
+
+#about {
+    height: 50px;
+}
+
+#services {
+    height: 50px;
+}
+
+.prices {
+    background: url('../img/banner_1.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#photos {
+    height: 50px;
+}
+
+.prices h2{
+    color: #fff;
+    text-shadow: 2px 2px 5px black;
+}
+
+.prices h3, .prices p {
+    color: #fff;    
+    text-align: center;
+}
+
+.prices hr {    
+    border-top: 1px solid rgba(247, 247, 247, 0.28);
+}
+
+#contact {
+    height: 50px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.main_pinions_block {
+    height: 100vh;
+}
+
+.pinions1 {
+/*
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    filter: blur(5px);
+*/
+    background: url('../img/pinion3.png') center;
+    opacity: 0.6;
+}
+
+.pinions2 {
+/*
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+*/
+    background: url('../img/pinion2.png') center;
+    opacity: 0.7;
+}
+
+.pinions3 {
+    background: url('../img/pinion.png') center;
+    opacity: 0.8;
+    background-color: rgba(21, 67, 88, 0.5);
+}
+
+.pinion {
+    height: 100vh;
+    width: 100%;
+/*    background: url('../img/pinion.png') center;*/
+    position: absolute;
+}
+
+.main_logo {    
+    font-size: 6em;
+    font-family: 'Poiret One', cursive;    
+    text-shadow: 3px 1px 5px black;
+    color: #fff;
+    transition: opacity .5s;
+    opacity: 1;
+}
+
+.navbar-brand:hover .main_logo{    
+    opacity: 0.6;
+}
+
+.main_logo span {    
+    color: #ffa2a2;
+}
+
+.main_info_block {
+    position: absolute;
+    margin: 0 auto;
+    top: 213px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.login_block {
+    padding-top: 8px;
+}
+
+.price {
+    color: #fff;
+    text-shadow: 2px 2px 5px black;
+    display: inline-block;
+    height: 500px;
+    margin: 40px;
+}
+
+.price ul{
+    padding-left: 23px;
+    text-align: left;
+}
+
+.input-group .pricec {
+    height: 34px;
+    background: #600000;
+    color: #fff;
+    vertical-align: top;
+    padding: 5px 12px;
+    position: relative;
+    right: -5px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: inline-block;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.input-group {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    left: 0;
+}
+
+.price1 {
+    background: rgba(21, 67, 88, 0.8);    
+}
+
+.price2 {
+    background: rgba(21, 88, 26, 0.8); 
+}
+
+.price3 {
+    background: rgba(88, 21, 21, 0.8); 
+}
+
+.row {
+    
+}
+
+
+.btn{
+  text-shadow: none !important;
+}
+
+.copyright {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+}

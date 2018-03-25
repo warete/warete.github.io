@@ -1,0 +1,90 @@
+body {
+    font-family: Arial;
+    font-size: 16px;    
+    background: #d0d0d0;
+    padding: 10px 15px;
+}       
+.browsers {
+    padding: 10px;
+    border: solid red 3px;
+    border-style: dashed;
+}
+a {
+   color: green; 
+}
+a:visited {
+    color: red;
+}
+a:active {
+    color: orange;
+}
+h1 {
+    color: orangered;
+    text-shadow: 3px 3px 3px #000;
+}
+h2, h3, h4, h5, h6 {
+    color: #830101;
+    text-shadow: grey 2px 2px 2px;
+}
+table {
+    border: 2px solid yellow;
+} 
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid grey;
+}
+tr {
+    background: #FFF;
+}
+.forma {
+    background: #fff;
+    padding: 10px;
+    width: 250px;
+}
+.one {
+    width: 100px;
+    height: 100px;
+    background: red;
+    z-index: 2;
+}
+
+.two {
+    width: 100px;
+    height: 100px;
+    background: green;
+    z-index: 1;
+    position: relative;
+    top: -40px;
+    left: 50px;
+}
+
+.right {
+	background: #cd0067;
+    transform: rotate(-15deg);
+    display: inline-block;
+}
+
+.left {
+	background: #ffff01;
+    transform: rotate(15deg);
+    display: inline-block;
+}
+
+.top {
+    background: #b8cce4;
+    transform: rotate(45deg);
+    margin: 0 25% 0 25% !important;
+}
+
+.top, .left, .right {
+    width: 100px;
+    height: 100px;
+    border: solid #000 2px;
+    border-radius: 15px;    
+    margin: 1px 9px;
+}
+
+.pict {
+    width: 290px;
+}
